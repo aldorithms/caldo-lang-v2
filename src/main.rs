@@ -9,7 +9,7 @@ fn main() {
 
     // Check that the user has provided an input file
     if args.len() < 2 {
-        eprintln!("Usage: {} <input_file>", args[0]); // Print the usage message
+        eprintln!("Usage: {} <input_file>", args[0]); // Error message if no input file is provided
         return;
     }
 
