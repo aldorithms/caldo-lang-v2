@@ -30,7 +30,7 @@ pub fn lexer(input: &str) -> Vec<String> {
                 }
                 // Match the current character
                 match c {
-                    // If the character is a parenthesis, brace, colon, or comma, push it to the vector
+                    // If the character is an operator
                     '(' | ')' | '{' | '}' | ':' | ',' => {
                         tokens.push(c.to_string()); // Push the character to the vector
                         chars.next(); // Advance the iterator
@@ -43,10 +43,10 @@ pub fn lexer(input: &str) -> Vec<String> {
             }
         }
     }
-
+    // If the buffer is not empty, push it to the vector
     if !buffer.is_empty() {
-        tokens.push(buffer);
+        tokens.push(buffer); // Push the buffer to the vector
     }
+    tokens // Return the vector of tokens
+} // End of function lexer
 
-    tokens
-}

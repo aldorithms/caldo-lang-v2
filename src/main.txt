@@ -1,4 +1,4 @@
-fn main(argc: i32, argv: char)
+fn main()
 {
-    
+    let foo : i64 = 45;
 }
