@@ -1,4 +1,3 @@
-fn main()
-{
+fn main() {
     let foo : i64 = 45;
 }
